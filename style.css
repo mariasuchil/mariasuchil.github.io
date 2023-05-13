@@ -143,7 +143,7 @@ nav .fa{
 .about-maria p{
     padding: 10px 0 20px;
 }
-.hero-btn{
+.res-btn{
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -154,8 +154,16 @@ nav .fa{
     position: relative;
     cursor: pointer;
 }
-.hero-btn:hover{
+.res-btn:hover{
     border: 1px solid #f495d4;
     background: #f495d4;
     transition: 1s;
+}
+.pink-btn{
+    border: 1px solid #f495d4;
+    background: transparent;
+    color: #f495d4;
+}
+.pin-btn:hover{
+    color: #fff;
 }
