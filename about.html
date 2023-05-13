@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+  <!-- adjust the view of the website to fit with the device -->
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+  <!-- this adds my flower icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- my title -->
+  <title>Suchil's Website</title>
+
+  <!-- this adds font to my website -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+
+  <!-- we want to section things for format purposes. This adds my flower and tab links -->
+  <section class="sub-header">
+    <nav>
+      <img src="Website/flower-doodle.gif">
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> <!-- this adds the menu pop up when using mobile screen -->
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i> <!-- for mobile purposes-->
+    </nav>
+
+    <h2>About Me</h2>
+    <a href="" class="hero-btn">Resume</a>
+
+    <h3> Academics:</h3>
+    <p>Hello! My name is Maria Suchil and I am a senior at Texas A&M University. I am majoring in 
+    technology management and double minoring in business and cybersecurity.</p>
+
+    <h3>Personal:</h3>
+    <p> On my free time, I enjoy playing video games, crocheting, and watching anime. I have a strong interest in traveling; I have 
+    been to Japan for a cultural immersion in high school. Ever since then, I have been eager to travel to other countries and I also 
+    hope to travel to Antarctica to see some penguins. I tried rock climbing once and developed a fear of heights, despite that I 
+    still want to go skydiving and parasailing. </p>
+
+  </section>
+
+<!--Javascript for toggle menu-->
+
+<script>
+  
+  var navLinks=document.getElementById("navLinks")
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+
+</script>
+</body>
+</html>
