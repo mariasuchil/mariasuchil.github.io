@@ -111,6 +111,7 @@ nav .fa{
 
 /*----------------About page--------------------*/
 
+/*adds format and background pic*/
 .sub-header{
     height: 50vh;
     width: 100%;
@@ -134,13 +135,13 @@ nav .fa{
     padding: 30px 2px;
 }
 .about-maria img{
-    width: 50%;
+    width: 40%;
 }
 .about-maria h1{
     padding: 0;
 }
 .about-maria p{
-    padding: 15px 0 25px;
+    padding: 10px 0 20px;
 }
 .hero-btn{
     display: inline-block;
