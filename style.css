@@ -152,6 +152,7 @@ nav .fa{
 }
 .about-maria img{
     width: 40%;
+    display: inline-block;
 }
 .about-maria h1{
     padding: 0;
