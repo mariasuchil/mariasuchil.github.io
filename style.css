@@ -153,8 +153,8 @@ nav .fa{
     /*padding: 30px 2px;*/
 }
 .about-maria img{
-    width: 50%;
-    border-radius: 10px;
+    width: 45%;
+    border-radius: 5px;
     /*display: block;*/
 }
 .about-maria h1{
@@ -168,6 +168,6 @@ nav .fa{
     background: transparent;
     color: #f495d4;
 }
-.pin-btn:hover{
+.pink-btn:hover{
     color: #fff;
 }
