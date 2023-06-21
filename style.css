@@ -151,8 +151,8 @@ nav .fa{
     padding: 30px 2px;
 }
 .about-maria img{
-    width: 100%;
-    display: inline-block;
+    width: 50%;
+    display: block;
 }
 .about-maria h1{
     padding: 0;
