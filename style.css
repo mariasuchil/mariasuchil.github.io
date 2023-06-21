@@ -147,15 +147,14 @@ nav .fa{
     padding-bottom: 50px;
 }
 .about-maria{
+    position: relative;
     flex-basis: 38%;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    /*padding: 30px 2px;*/
+    padding: 30px 2px;
 }
 .about-maria img{
+    position: absolute;
+    left: 10px;
     width: 45%;
-    border-radius: 5px;
-    /*display: block;*/
 }
 .about-maria h1{
     padding: 0;
