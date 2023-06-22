@@ -9,7 +9,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Website/mountains.jpg);
+    background-image: linear-gradient(rgba(59, 64, 77, 0.7),rgba(59, 64, 77, 0.7)), url(Website/cherry.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -127,7 +127,39 @@ nav .fa{
     }
 }
 
-/*----------------About page--------------------*/
+/*----------------About Section--------------------*/
+
+.about-me{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/* aligns to the center of the page*/
+.descr{
+    flex-basis: 31%;
+    background: #f3e4f3;
+    border-radius: 40px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+
+
+/*---------------Projects Page--------------------*/
 
 /*adds format and background pic*/
 .sub-header{
@@ -169,4 +201,16 @@ nav .fa{
 }
 .pink-btn:hover{
     color: #fff;
+}
+
+/******************** custom scroll bar **************************8*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#bda8f4,#f8b3f0);
+    border-radius: 10px;
 }
