@@ -149,9 +149,9 @@ p{
 /* aligns to the center of the page*/
 .descr{
     flex-basis: 31%;
-    background: #f3e4f3;
+    background: #fff3f3;
     border-radius: 40px;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-bottom: 5%;
     padding: 30px 15px;
     box-sizing: border-box;
@@ -201,7 +201,36 @@ p{
 }
 */
 
-/******************** custom scroll bar **************************8*/
+/********************* RESUME TAB  **************************/
+.second-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Website/mountains.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.row1,.row2,.row3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.act{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 18px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+
+
+
+/******************** custom scroll bar ****************************/
 ::-webkit-scrollbar{
     width: 15px;
 }
