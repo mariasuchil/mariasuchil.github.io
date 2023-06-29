@@ -5,13 +5,13 @@
     font-family: 'Roboto Slab', serif;
 }
 
-/*add background image and a dark filter over it*/
+/*add background image*/
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(Website/fantasy.jpg);
+    background-image: url(Website/m.png);
     background-position: center;
-    background-size: cover;
+    background-size: 1522px 842px;
     position: relative;
 }
 nav{
@@ -38,7 +38,7 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: #fff;
+    color: #c6a801;
     text-decoration: none;
     font-size: 13px;
 }
@@ -48,7 +48,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #fff;
+    background: #e4c933;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -67,16 +67,28 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    color: #fff;
+    background-image: linear-gradient(
+	to right,
+	#462523 0,
+    #cb9b51 22%, 
+	#f6e27a 45%,
+	#fff789 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+    /*
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #f8b3f0,
-        0 0 82px #f8b3f0,
-        0 0 92px #f8b3f0,
-        0 0 102px #f8b3f0,
-        0 0 151px #f8b3f0;
+        0 0 42px #f646aa,
+        0 0 82px #f646aa,
+        0 0 92px #f646aa,
+        0 0 102px #f646aa,
+        0 0 151px #f646aa; */
 }
 .text-box h1{
     font-size: 65px;
@@ -84,7 +96,19 @@ nav img{
 .text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
-    color: #fff;
+    background-image: linear-gradient(
+	to right,
+	#462523 0,
+   	#cb9b51 22%, 
+	#fadf5a 45%,
+	#b6ae41 50%,
+	#f8de5c 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+
 }
 
 /* hides the menu and close icons from big screen*/
