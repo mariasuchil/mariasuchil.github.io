@@ -1,15 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Bacasime Antique', serif;
 }
 
 /*add background image*/
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(Website/m.png);
+    background-color: #ffcfd6;
     background-position: center;
     background-size: 1522px 842px;
     position: relative;
@@ -21,10 +20,10 @@ nav{
     align-items: center;
 }
 
-/*adjust the flower icon size*/
+/*adjust the flower icon size
 nav img{
-    width: 150px;
-}
+    width: 100px;
+} */
 
 /* creates the row for the tabs*/
 .nav-links{
@@ -38,9 +37,9 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: #c6a801;
+    color: #000;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /*add a line under each tab*/
@@ -48,7 +47,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #e4c933;
+    background: #000;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -67,49 +66,18 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    background-image: linear-gradient(
-	to right,
-	#462523 0,
-    #cb9b51 22%, 
-	#f6e27a 45%,
-	#fff789 50%,
-	#f6e27a 55%,
-	#cb9b51 78%,
-	#462523 100%
-	);
-   color:transparent;
-   -webkit-background-clip:text;
-    /*
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #f646aa,
-        0 0 82px #f646aa,
-        0 0 92px #f646aa,
-        0 0 102px #f646aa,
-        0 0 151px #f646aa; */
-}
-.text-box h1{
-    font-size: 65px;
+    color: #000;
 }
 .text-box p{
+    font-family: 'allura', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+/*.text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
-    background-image: linear-gradient(
-	to right,
-	#462523 0,
-   	#cb9b51 22%, 
-	#fadf5a 45%,
-	#b6ae41 50%,
-	#f8de5c 55%,
-	#cb9b51 78%,
-	#462523 100%
-	);
-   color:transparent;
-   -webkit-background-clip:text;
-
-}
+    color:#000;
+}*/
 
 /* hides the menu and close icons from big screen*/
 nav .fa{
@@ -123,9 +91,10 @@ nav .fa{
         font-size: 35px;
     }
     .text-box p{
-        margin: 10px 0 40px;
-        font-size: 12px;
-        color: #fff;
+        margin: 10px 0 0px;
+        font-size: 40px;
+        color: #000000;
+        text-align: center;
     }
     
     /* creates the pink menu*/
@@ -163,13 +132,20 @@ nav .fa{
 /*----------------About Section--------------------*/
 
 .about-me{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff6ee;
+    background-position: center;
+    background-size: 1522px 842px;
+    position: relative;
+}
+.abt-maria{
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
 }
 h1{
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 600;
 }
 p{
@@ -177,20 +153,10 @@ p{
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
-}
-
-/* aligns to the center of the page*/
-.descr{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 40px;
-    margin-top: 1%;
-    margin-bottom: 5%;
-    padding: 30px 15px;
-    box-sizing: border-box;
+    float: left;
 }
 .about-maria img{
-    width: 50%;
+    width: 30%;
 }
 
 
@@ -201,13 +167,13 @@ p{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Website/phone.jpg);
+    background-image: url(Website/m.png);
     background-position: center;
-    background-size: cover;
+    background-size: 1536px 430px;
     text-align: center;
-    color: #fff;
+    color: #fcbfd2;
 }
-.about-me{
+.web{
     width: 80%;
     margin: auto;
     padding-top: 80px;
@@ -234,15 +200,15 @@ p{
 }
 */
 
-/********************* RESUME TAB  **************************/
+/********************* SCHOOL TAB  **************************/
 .second-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Website/mountains.jpg);
+    background-color: #f0dafa;
     background-position: center;
     background-size: cover;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 .row1,.row2,.row3{
     width: 80%;
