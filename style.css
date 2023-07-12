@@ -8,14 +8,16 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-color: #ffcfd6;
+    background-image: url(Website/m.png);
     background-position: center;
     background-size: 1522px 842px;
     position: relative;
 }
+
+/* adds small header section*/
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 4% 6%;
     justify-content: space-between;
     align-items: center;
 }
@@ -30,10 +32,12 @@ nav img{
     flex: 1;
     text-align: right;
 }
+
+/*spacing between the link tab names*/
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 15px;
     position: relative;
 }
 .nav-links ul li a{
@@ -58,26 +62,21 @@ nav img{
     width: 100%;
 }
 
-/* text on screen edits (welcome plus line below)*/
+/* text on screen edits*/
 .text-box{
-    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    color: #000;
+    color: #4e4d4d;
 }
-.text-box p{
+.text-box h1{
     font-family: 'allura', cursive;
     font-size: 100px;
+    font-weight: 100;
     text-align: center;
 }
-/*.text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color:#000;
-}*/
 
 /* hides the menu and close icons from big screen*/
 nav .fa{
@@ -88,12 +87,7 @@ nav .fa{
 @media(max-width: 700px)
     {
     .text-box h1{
-        font-size: 35px;
-    }
-    .text-box p{
-        margin: 10px 0 0px;
-        font-size: 40px;
-        color: #000000;
+        font-size: 80px;
         text-align: center;
     }
     
@@ -112,16 +106,15 @@ nav .fa{
         z-index: 2;
         transition: 1s;
     }
-
     /* shows the icons*/
     nav .fa{
         display: block;
-        color:#fff;
+        color:#353434;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
-
+    
     /* adds space between icons and txt of tabs*/
     .nav-links ul{
         padding: 30px;
@@ -132,33 +125,32 @@ nav .fa{
 /*----------------About Section--------------------*/
 
 .about-me{
-    min-height: 100vh;
     width: 100%;
-    background-color: #fff6ee;
-    background-position: center;
+    min-height: 100vh;
+    background-color: #fff9f5;
     background-size: 1522px 842px;
-    position: relative;
-}
-.abt-maria{
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-}
-h1{
-    font-size: 40px;
-    font-weight: 600;
-}
-p{
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    float: left;
-}
-.about-maria img{
-    width: 30%;
+
 }
 
+.about-me h1{
+    font-size: 55px;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.txt{
+    font-size: 21px;
+    padding-right: 10%;
+    padding-top: 7%;
+}
+
+img{
+    max-width: 410px;
+    float: left;
+    padding-left: 13%;
+    margin-right: 50px;
+}
 
 
 /*---------------Projects Page--------------------*/
@@ -170,8 +162,12 @@ p{
     background-image: url(Website/m.png);
     background-position: center;
     background-size: 1536px 430px;
+}
+.hd1{
     text-align: center;
+    padding-top: 60px;
     color: #fcbfd2;
+    font-family: 'allura', cursive;
 }
 .web{
     width: 80%;
@@ -179,14 +175,14 @@ p{
     padding-top: 80px;
     padding-bottom: 50px;
 }
-.about-maria{
+.about{
     flex-basis: 38%;
     padding: 30px 2px;
 }
-.about-maria h1{
+.about h1{
     padding: 0;
 }
-.about-maria p{
+.about p{
     padding: 10px 0 20px;
 }
 /*pink button
@@ -225,6 +221,8 @@ p{
     padding: 20px 12px;
     box-sizing: border-box;
 }
+
+
 
 
 
