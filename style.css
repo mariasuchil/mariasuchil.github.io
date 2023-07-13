@@ -128,7 +128,7 @@ img{
 /* cursive font on title, pink neon effect */
 .hd1 h1{
     font-family: 'allura', cursive;
-    font-size: 55px;
+    font-size: 70px;
     text-align: center;
     padding-top: 25px;
     color: #ffffff;
@@ -173,24 +173,19 @@ img{
 .second-header{
     height: 50vh;
     width: 100%;
-    background-image: url(Website/white.jpg);
-    /*background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);*/
+    background-image: linear-gradient(rgba(255, 255, 255, 0.592), rgba(255, 227, 247, 0.351)), url(Website/white.jpg);
     background-position: center;
     background-size: 1550px 995px;
     color: #000000;
 }
-/*.second-header h1{
-    text-align: center;
-    color: #bda8f4;
-}*/
-
+/*effects for title*/
 .milky {
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
     text-transform: uppercase;
     display: block;
-    font-size: 92px;
-    color: #ff8fd6;
-    text-shadow: 0 8px 9px #5d0246, 0px -2px 1px #62003b;
+    font-size: 70px;
+    color: #ffffff;
+    text-shadow: 0 8px 9px #50007a, 0px -2px 1px #7a00bc;
     font-weight: bold;
     letter-spacing: -4px;
     text-align: center;
@@ -205,17 +200,25 @@ img{
 .row1,.row2,.row3{
     width: 80%;
     margin: auto;
-    text-align: center;
     padding-top: 100px;
+}
+.row1,.row2,.row3 h1{
+    text-align: center;
 }
 .act{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #fcefff;
     border-radius: 18px;
     margin-top: 1%;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
+}
+.act h2{
+    text-align: center;
+}
+.act p{
+    text-align: left;
 }
 
 /******************* mobile devices********************/
@@ -267,12 +270,12 @@ img{
     display: block;
     margin: auto;
     transition: 0.5s;
-}
+    }
 
-/*when hovering over, line appears*/
-.nav-links ul li:hover::after{
+    /*when hovering over, line appears*/
+    .nav-links ul li:hover::after{
     width: 100%;
-}
+    }
     .about-me h1{
         font-size: 40px;
         padding-bottom: 17%;
@@ -289,6 +292,9 @@ img{
     }
     .hd1 h1{
         padding-top: 22%;
+        font-size: 45px;
+    }
+    .milky{
         font-size: 45px;
     }
 }
