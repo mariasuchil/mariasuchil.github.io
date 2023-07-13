@@ -121,25 +121,26 @@ img{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: url(Website/psm.jpg);
+    background-image: url(Website/clo.jpg);
     background-position: center;
-    background-size: 1536px 430px;
+    background-size: 1545px 595px;
 }
+/* cursive font on title, pink neon effect */
 .hd1 h1{
     font-family: 'allura', cursive;
     font-size: 55px;
     text-align: center;
     padding-top: 25px;
-    color: #f655bb;
+    color: #ffffff;
     text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #f511cb,
-      0 0 82px #fac0ef,
-      0 0 92px #fac0ef,
-      0 0 102px #ed30ca,
-      0 0 151px #fac0ef;
+      0 0 7px #fd3ec4,
+      0 0 10px #ffa0e3,
+      0 0 21px #ffa0e3,
+      0 0 42px #ffa0e3,
+      0 0 82px #ffa0e3,
+      0 0 92px #ff40a3,
+      0 0 102px #ffffff,
+      0 0 151px #ffffff;
 }
 .web{
     width: 80%;
@@ -172,12 +173,35 @@ img{
 .second-header{
     height: 50vh;
     width: 100%;
-    background-color: #f0dafa;
+    background-image: url(Website/white.jpg);
+    /*background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);*/
     background-position: center;
-    background-size: cover;
-    text-align: center;
+    background-size: 1550px 995px;
     color: #000000;
 }
+/*.second-header h1{
+    text-align: center;
+    color: #bda8f4;
+}*/
+
+.milky {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+    text-transform: uppercase;
+    display: block;
+    font-size: 92px;
+    color: #ff8fd6;
+    text-shadow: 0 8px 9px #5d0246, 0px -2px 1px #62003b;
+    font-weight: bold;
+    letter-spacing: -4px;
+    text-align: center;
+    position: absolute;
+    padding: 100px 200px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+  }
+
 .row1,.row2,.row3{
     width: 80%;
     margin: auto;
@@ -235,6 +259,20 @@ img{
         padding: 30px;
 
     }
+    .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/*when hovering over, line appears*/
+.nav-links ul li:hover::after{
+    width: 100%;
+}
     .about-me h1{
         font-size: 40px;
         padding-bottom: 17%;
@@ -248,6 +286,10 @@ img{
     .txt{
         font-size: 13px;
         padding-left: 14%;
+    }
+    .hd1 h1{
+        padding-top: 22%;
+        font-size: 45px;
     }
 }
 
