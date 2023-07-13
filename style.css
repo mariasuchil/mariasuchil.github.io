@@ -17,7 +17,7 @@
 /* adds small header section*/
 nav{
     display: flex;
-    padding: 4% 6%;
+    padding: 3.5% 6%;
     justify-content: space-between;
     align-items: center;
 }
@@ -135,7 +135,7 @@ nav .fa{
 .about-me h1{
     font-size: 55px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -159,15 +159,25 @@ img{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: url(Website/m.png);
+    background-image: linear-gradient(#68023a66, #68023a68), url(Website/neon.jpg);
     background-position: center;
     background-size: 1536px 430px;
 }
-.hd1{
-    text-align: center;
-    padding-top: 60px;
-    color: #fcbfd2;
+.hd1 h1{
     font-family: 'allura', cursive;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 25px;
+    color: #f655bb;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f511cb,
+      0 0 82px #fac0ef,
+      0 0 92px #fac0ef,
+      0 0 102px #ed30ca,
+      0 0 151px #fac0ef;
 }
 .web{
     width: 80%;
