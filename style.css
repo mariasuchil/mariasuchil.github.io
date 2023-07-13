@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Bacasime Antique', serif;
 }
 
 /*add background image*/
@@ -14,33 +13,37 @@
     background-size: 1522px 842px;
     position: relative;
 }
+
+/* adds small header section*/
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 3.5% 6%;
     justify-content: space-between;
     align-items: center;
 }
 
-/*adjust the flower icon size*/
+/*adjust the flower icon size
 nav img{
-    width: 150px;
-}
+    width: 100px;
+} */
 
 /* creates the row for the tabs*/
 .nav-links{
     flex: 1;
     text-align: right;
 }
+
+/*spacing between the link tab names*/
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 15px;
     position: relative;
 }
 .nav-links ul li a{
-    color: #c6a801;
+    color: #000;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /*add a line under each tab*/
@@ -48,7 +51,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #e4c933;
+    background: #000;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -59,56 +62,20 @@ nav img{
     width: 100%;
 }
 
-/* text on screen edits (welcome plus line below)*/
+/* text on screen edits*/
 .text-box{
-    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    background-image: linear-gradient(
-	to right,
-	#462523 0,
-    #cb9b51 22%, 
-	#f6e27a 45%,
-	#fff789 50%,
-	#f6e27a 55%,
-	#cb9b51 78%,
-	#462523 100%
-	);
-   color:transparent;
-   -webkit-background-clip:text;
-    /*
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #f646aa,
-        0 0 82px #f646aa,
-        0 0 92px #f646aa,
-        0 0 102px #f646aa,
-        0 0 151px #f646aa; */
+    color: #4e4d4d;
 }
 .text-box h1{
-    font-size: 65px;
-}
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
-    background-image: linear-gradient(
-	to right,
-	#462523 0,
-   	#cb9b51 22%, 
-	#fadf5a 45%,
-	#b6ae41 50%,
-	#f8de5c 55%,
-	#cb9b51 78%,
-	#462523 100%
-	);
-   color:transparent;
-   -webkit-background-clip:text;
-
+    font-family: 'allura', cursive;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
 }
 
 /* hides the menu and close icons from big screen*/
@@ -116,16 +83,154 @@ nav .fa{
     display: none;
 }
 
-/*for the mobile devices*/
+
+/*----------------About Section--------------------*/
+
+.about-me{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff9f5;
+    background-size: 1522px 842px;
+
+}
+
+.about-me h1{
+    font-size: 55px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.txt{
+    font-size: 21px;
+    padding-right: 10%;
+    padding-top: 7%;
+}
+
+img{
+    max-width: 410px;
+    float: left;
+    padding-left: 13%;
+    margin-right: 50px;
+}
+
+
+/*---------------Projects Page--------------------*/
+
+/*adds format and background pic*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(Website/clo.jpg);
+    background-position: center;
+    background-size: 1545px 595px;
+}
+/* cursive font on title, pink neon effect */
+.hd1 h1{
+    font-family: 'allura', cursive;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 25px;
+    color: #ffffff;
+    text-shadow:
+      0 0 7px #fd3ec4,
+      0 0 10px #ffa0e3,
+      0 0 21px #ffa0e3,
+      0 0 42px #ffa0e3,
+      0 0 82px #ffa0e3,
+      0 0 92px #ff40a3,
+      0 0 102px #ffffff,
+      0 0 151px #ffffff;
+}
+.web{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about{
+    flex-basis: 38%;
+    padding: 30px 2px;
+}
+.about h1{
+    padding: 0;
+}
+.about p{
+    padding: 10px 0 20px;
+}
+/*pink button
+.pink-btn{
+    border: 1px solid #f495d4;
+    background: transparent;
+    color: #f495d4;
+}
+.pink-btn:hover{
+    color: #fff;
+}
+*/
+
+/********************* SCHOOL TAB  **************************/
+.second-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.592), rgba(255, 227, 247, 0.351)), url(Website/white.jpg);
+    background-position: center;
+    background-size: 1550px 995px;
+    color: #000000;
+}
+/*effects for title*/
+.milky {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+    text-transform: uppercase;
+    display: block;
+    font-size: 70px;
+    color: #ffffff;
+    text-shadow: 0 8px 9px #50007a, 0px -2px 1px #7a00bc;
+    font-weight: bold;
+    letter-spacing: -4px;
+    text-align: center;
+    position: absolute;
+    padding: 100px 200px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+  }
+
+.row1,.row2,.row3{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+.row1,.row2,.row3 h1{
+    text-align: center;
+}
+.act{
+    flex-basis: 31%;
+    background: #fcefff;
+    border-radius: 18px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.act h2{
+    text-align: center;
+}
+.act p{
+    text-align: left;
+}
+
+/******************* mobile devices********************/
+
 @media(max-width: 700px)
     {
-    .text-box h1{
-        font-size: 35px;
+    .header{
+        background-size: 400px 756px;
     }
-    .text-box p{
-        margin: 10px 0 40px;
-        font-size: 12px;
-        color: #fff;
+    .text-box h1{
+        font-size: 55px;
+        text-align: center;
     }
     
     /* creates the pink menu*/
@@ -143,122 +248,57 @@ nav .fa{
         z-index: 2;
         transition: 1s;
     }
-
     /* shows the icons*/
     nav .fa{
         display: block;
-        color:#fff;
+        color:#353434;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
-
+    
     /* adds space between icons and txt of tabs*/
     .nav-links ul{
         padding: 30px;
 
     }
-}
-
-/*----------------About Section--------------------*/
-
-.about-me{
-    width: 80%;
+    .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
     margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-h1{
-    font-size: 36px;
-    font-weight: 600;
-}
-p{
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
+    transition: 0.5s;
+    }
 
-/* aligns to the center of the page*/
-.descr{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 40px;
-    margin-top: 1%;
-    margin-bottom: 5%;
-    padding: 30px 15px;
-    box-sizing: border-box;
-}
-.about-maria img{
-    width: 50%;
-}
-
-
-
-/*---------------Projects Page--------------------*/
-
-/*adds format and background pic*/
-.sub-header{
-    height: 50vh;
+    /*when hovering over, line appears*/
+    .nav-links ul li:hover::after{
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Website/phone.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
+    }
+    .about-me h1{
+        font-size: 40px;
+        padding-bottom: 17%;
+        padding-top: 20%;
+    }
+    img{
+        max-width: 300px;
+        align-items: center;
+        padding-bottom: 7%;
+    }
+    .txt{
+        font-size: 13px;
+        padding-left: 14%;
+    }
+    .hd1 h1{
+        padding-top: 22%;
+        font-size: 45px;
+    }
+    .milky{
+        font-size: 45px;
+    }
 }
-.about-me{
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
-}
-.about-maria{
-    flex-basis: 38%;
-    padding: 30px 2px;
-}
-.about-maria h1{
-    padding: 0;
-}
-.about-maria p{
-    padding: 10px 0 20px;
-}
-/*pink button
-.pink-btn{
-    border: 1px solid #f495d4;
-    background: transparent;
-    color: #f495d4;
-}
-.pink-btn:hover{
-    color: #fff;
-}
-*/
 
-/********************* RESUME TAB  **************************/
-.second-header{
-    height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Website/mountains.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-}
-.row1,.row2,.row3{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-.act{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 18px;
-    margin-top: 1%;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-}
 
 
 
